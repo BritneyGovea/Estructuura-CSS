@@ -1,0 +1,52 @@
+body{
+	font-size: 16px;
+}
+*{
+	color: white;
+	box-sizing: border-box;
+}
+header, footer{
+	height: 200px;
+	padding: 1em;
+	
+	}
+
+article{
+		height: auto;
+		background-color: hotpink;
+		padding: 1em;
+		margin-bottom: 1em;
+	}
+
+body > header{
+	background-color: lightblue;
+	margin-left: 20%;
+	margin-bottom: 1em;
+}
+
+nav{
+	width: 20%;
+	position: absolute;
+	height: 600px;
+	left: 0;
+	top: 0; 
+	background-color: lightblue;
+	padding: 1em;
+
+}
+
+main > article > header{
+	background-color: hotpink;
+}
+main {
+	margin-left: 20%;
+	margin-bottom: 110px;
+}
+footer{
+	background-color: black;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	text-align: center;
+}
