@@ -13,40 +13,40 @@ header, footer{
 
 article{
 		height: auto;
-		background-color: hotpink;
+		background-color: pink;
 		padding: 1em;
 		margin-bottom: 1em;
 	}
 
 body > header{
 	background-color: lightblue;
-	margin-left: 20%;
 	margin-bottom: 1em;
+	float: left;
+	width: 79%;
+
 }
 
 nav{
-	width: 20%;
-	position: absolute;
-	height: 600px;
-	left: 0;
-	top: 0; 
+	 
 	background-color: lightblue;
 	padding: 1em;
+	float: left;
+	width: 20%;
+	height: 600px;
+	margin-right: 1%;
 
 }
 
 main > article > header{
-	background-color: hotpink;
+	background-color: pink;
 }
 main {
-	margin-left: 20%;
-	margin-bottom: 110px;
+	float: left;
+	width: 79%;
 }
 footer{
-	background-color: black;
-	position: fixed;
-	bottom: 0;
+	background-color: mediumpurple;
 	width: 100%;
-	left: 0;
 	text-align: center;
+	clear: both;
 }
