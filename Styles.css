@@ -1,52 +1,102 @@
 body{
 	font-size: 16px;
 }
+
 *{
 	color: white;
 	box-sizing: border-box;
 }
+
 header, footer{
 	height: 200px;
 	padding: 1em;
-	
-	}
+}
 
 article{
-		height: auto;
-		background-color: hotpink;
-		padding: 1em;
-		margin-bottom: 1em;
-	}
-
-body > header{
-	background-color: lightblue;
-	margin-left: 20%;
+	background-color: hotpink;
+	padding: 1em;
 	margin-bottom: 1em;
 }
 
+body > header{
+	background-color: lightblue;
+	margin-bottom: 1em;
+	width: 100%;
+}
+
 nav{
-	width: 20%;
-	position: absolute;
-	height: 600px;
-	left: 0;
-	top: 0; 
+	width: 100%;
+	height: 200px;
 	background-color: lightblue;
 	padding: 1em;
-
+	margin-bottom: 1em;
 }
 
 main > article > header{
 	background-color: hotpink;
 }
+
 main {
-	margin-left: 20%;
-	margin-bottom: 110px;
+	width: 100%;
 }
+
 footer{
 	background-color: black;
-	position: fixed;
-	bottom: 0;
 	width: 100%;
-	left: 0;
 	text-align: center;
+	clear: both;
 }
+
+/* Versión tablet */
+@media (min-width: 720px) {
+	/*Aquí inician los estilos para versión tablet*/
+	body > header{
+		float: left;
+		width: 79%;
+		background-color: greenyellow;
+	}
+    nav{
+	    width: 20%;
+		height: 600px;
+		float: left;
+		margin-right: 1%;
+		background-color: seagreen;
+    }
+    main {
+    	float: left;
+    	width: 79%;
+}
+    article {
+    	background-color: mediumblue;
+    }
+    main > article > header {
+		background-color: royalblue;
+}
+    footer {
+    	background-color: skyblue;
+    }   
+	/*Aquí terminan los estilos para versión tablet*/
+}
+
+/* Versión laptop */
+@media (min-width: 1024px) {
+	/*Aquí inician los estilos para versión tablet*/
+	body > header{
+		background-color: purple;
+	}
+    nav{
+	    background-color: mediumpurple;
+    }
+    
+    article {
+    	background-color: rebeccapurple;
+    }
+    main > article > header {
+		background-color: mediumpurple;
+}
+    footer {
+    	background-color: rebeccapurple;
+    }   
+	/*Aquí terminan los estilos para versión laptop*/
+}
+
