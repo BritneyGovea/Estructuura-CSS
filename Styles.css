@@ -1,4 +1,5 @@
 body{
+
 	font-size: 16px;
 }
 
@@ -53,17 +54,21 @@ footer{
 	main > header{
 		background-color: greenyellow;
 }
+    .contenedor{
+    	display: flex;
+    	gap: 1em;
+    	flex-flow: row-wrap;
+    	flex: 1 0 100%;
+    	align-items: flex-start;
+    }
     nav{
-	    width: 20%;
-		height: 600px;
-		display: inline-block;
-		margin-right: 1%;
+    	flex: 1 0 0;
+	    height: 600px;
 		background-color: seagreen;
 }
     main {
-    	display: inline-block;
-    	width: 78%;
-    	vertical-align: top;
+    	flex: 4 0 0;
+    	
 }
     article {
     	background-color: mediumblue;
@@ -80,10 +85,13 @@ footer{
 /* Versión laptop */
 @media (min-width: 1024px) {
 	/*Aquí inician los estilos para versión tablet*/
-	body > header{
+	main > header{
 		background-color: purple;
 	}
-    nav{
+	.contenedor {
+		flex-direction: row-reverse;
+	}
+    nav{|
 	    background-color: mediumpurple;
     }
     
