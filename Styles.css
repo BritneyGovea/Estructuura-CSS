@@ -55,20 +55,14 @@ footer{
 		background-color: greenyellow;
 }
     .contenedor{
-    	display: flex;
-    	gap: 1em;
-    	flex-flow: row-wrap;
-    	flex: 1 0 100%;
-    	align-items: flex-start;
+    	
     }
     nav{
-    	flex: 1 0 0;
-	    height: 600px;
+    	height: 600px;
 		background-color: seagreen;
 }
     main {
-    	flex: 4 0 0;
-    	
+    	   	
 }
     article {
     	background-color: mediumblue;
@@ -90,6 +84,7 @@ footer{
 	}
 	.contenedor {
 		flex-direction: row-reverse;
+			
 	}
     nav{|
 	    background-color: mediumpurple;
